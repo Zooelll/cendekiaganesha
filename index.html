@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links - CV. Cendekia Ganesha Indonesia</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;600;700;800&display=swap');
-
         * {
             margin: 0;
             padding: 0;
@@ -16,7 +14,7 @@
         }
 
         body {
-            background-color: #0B1B3D; /* BOLD SAPPHIRE */
+            background-color: #0B1B3D;
             color: #FFFFFF;
             display: flex;
             justify-content: center;
@@ -35,21 +33,17 @@
         }
 
         .profile-header {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
-        .profile-logo {
-            width: 90px;
-            height: 90px;
-            background-color: rgba(255, 255, 255, 0.08);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+        .profile-logo-img {
+            width: 95px;
+            height: 95px;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.5rem;
-            margin: 0 auto 20px auto;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
         .company-name {
@@ -71,7 +65,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
         }
 
         .link-btn {
@@ -96,15 +90,15 @@
         }
 
         .primary-btn {
-            background-color: #FB8B24; /* Coral */
+            background-color: #D97706;
             color: #FFFFFF;
-            box-shadow: 0 6px 20px rgba(251, 139, 36, 0.25);
+            box-shadow: 0 6px 20px rgba(217, 119, 6, 0.25);
         }
 
         .primary-btn:hover {
-            background-color: #E07A1B;
+            background-color: #B45309;
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(251, 139, 36, 0.4);
+            box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);
         }
 
         .secondary-btn {
@@ -115,9 +109,29 @@
 
         .secondary-btn:hover {
             background-color: #1a2d5c;
-            border-color: #FB8B24;
+            border-color: #005A70;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .operational-info {
+            background-color: rgba(19, 34, 71, 0.5);
+            border: 1px dashed rgba(255, 255, 255, 0.15);
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            width: 100%;
+        }
+
+        .operational-info p {
+            font-size: 0.85rem;
+            color: #9CA3AF;
+            line-height: 1.5;
+        }
+
+        .operational-info strong {
+            color: #FBBF24;
+            font-weight: 600;
         }
 
         .links-footer p {
@@ -132,33 +146,39 @@
 
     <div class="links-container">
         <div class="profile-header">
-            <div class="profile-logo">🎓</div>
+            <img src="logo.png" alt="Logo Cendekia Ganesha" class="profile-logo-img">
             <h1 class="company-name">CV. Cendekia Ganesha Indonesia</h1>
             <p class="tagline">Mari raih cita-cita sesuai kemampuan sang buah hati dengan deteksi sejak dini melalui Cendekia Indonesia.</p>
         </div>
 
         <div class="links-wrapper">
-            <!-- Tombol 1: WhatsApp -->
-            <a href="https://wa.me/6281392761879?text=Halo%20Admin%20Cendekia%20Ganesha" class="link-btn primary-btn" target="_blank">
+            <a href="https://wa.me/6281392761879?text=Halo%20admin%20Cendekia%20Ganesha%20Indonesia,%20saya%20dari%20instansi%20sekolah%20ingin%20berkonsultasi%20mengenai%20rencana%20pelaksanaan%20tes%20psikologi" class="link-btn primary-btn" target="_blank">
                 <span class="btn-icon">💬</span>
                 <span class="btn-text">Konsultasi & Jadwal Tes (WhatsApp)</span>
             </a>
 
-            <!-- Tombol 2: Katalog -->
-            <a href="#" class="link-btn secondary-btn">
-                <span class="btn-icon">📊</span>
-                <span class="btn-text">Brosur Digital & Daftar Harga</span>
+            <a href="https://instagram.com/cendekiaganesha" class="link-btn secondary-btn" target="_blank">
+                <span class="btn-icon">📸</span>
+                <span class="btn-text">Follow Instagram Kami</span>
             </a>
 
-            <!-- Tombol 3: Website -->
-            <a href="#" class="link-btn secondary-btn">
+            <a href="mailto:info@talentaindonesia.id" class="link-btn secondary-btn">
+                <span class="btn-icon">✉️</span>
+                <span class="btn-text">Kirim Email Resmi</span>
+            </a>
+
+            <a href="index.html" class="link-btn secondary-btn">
                 <span class="btn-icon">🌐</span>
                 <span class="btn-text">Kunjungi Website Resmi</span>
             </a>
         </div>
 
+        <div class="operational-info">
+            <p>🕒 <strong>Jam Operasional Admin:</strong><br>Senin - Sabtu | 08.00 - 16.00 WIB</p>
+        </div>
+
         <div class="links-footer">
-            <p>© 2026 CV. Cendekia Ganesha Indonesia. <br>All rights reserved.</p>
+            <p>&copy; 2026 CV. Cendekia Ganesha Indonesia.<br>All rights reserved.</p>
         </div>
     </div>
 
